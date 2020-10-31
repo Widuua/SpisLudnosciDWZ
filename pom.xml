@@ -16,6 +16,7 @@
 
     <properties>
         <java.version>11</java.version>
+
     </properties>
 
     <dependencies>
@@ -52,10 +53,30 @@
     </dependencies>
 
     <build>
+
         <plugins>
+            <!--
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>spring-boot</classifier>
+                            <mainClass>
+                                com.widua.spis.SpisApplication
+                            </mainClass>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
