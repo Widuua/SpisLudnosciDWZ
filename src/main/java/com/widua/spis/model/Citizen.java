@@ -80,12 +80,10 @@ public class Citizen {
 
     @Override
     public String toString() {
-        return "Citizen{" +
-                "discordNick='" + discordNick + '\'' +
-                ", minecraftNick='" + minecraftNick + '\'' +
-                ", firstCollective=" + firstCollective +
-                ", secondCollective=" + secondCollective +
-                ", autonomy=" + autonomy +
-                '}';
+        return "Citizen: "+ discordNick+"\n"+
+                "Minecraft nick: "+ minecraftNick+"\n"+
+                "First collective: "+ firstCollective+"\n"+
+                "Second collective: "+secondCollective+"\n"+
+                "Autonomy: "+autonomy+"\n";
     }
 }

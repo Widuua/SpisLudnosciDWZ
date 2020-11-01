@@ -68,14 +68,14 @@ public class AddCommand implements Command {
 
     public static Collective collectiveChooser(){
 
-        System.out.println("[BUDOWNICZY], [PRZEMYSŁOWY], [HUTGUR], [LOGISTYCZNY], [DREWPAP], [ROLNICZY], [BRAK]");
+        System.out.println("[BUDOWNICZY], [PRZEM], [HUTGUR], [LOGISTYCZNY], [DREWPAP], [ROLNICZY], [BRAK]");
         String readedCollective = scan.nextLine();
 
         switch (readedCollective.toUpperCase()){
             case "BUDOWNICZY":{
                 return Collective.BUDOWNICZY;
             }
-            case "PRZEMYSŁOWY":{
+            case "PRZEM":{
                 return Collective.PRZEMYSŁOWY;
             }
             case "HUTGUR":{
